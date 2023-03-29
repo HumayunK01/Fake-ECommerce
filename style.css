@@ -1,0 +1,129 @@
+/* ------- Adding Google Font ------- */
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root {
+  --black: #252525;
+  --white: #ffffff;
+  --off-white: #f1f1f1;
+}
+
+/* ------- Global Variables ------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* ------- Navigation Bar CSS ------- */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+  gap: 25px;
+  height: 80px;
+}
+
+.nav-bar .logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.nav-bar input {
+  flex: 1;
+  padding: 9px;
+  border-radius: 5px;
+  background-color: var(--off-white);
+  font-size: 15px;
+  outline: none;
+  border: none;
+}
+
+.nav-bar i {
+  cursor: pointer;
+  font-size: 17px;
+  color: var(--black);
+}
+
+/* ------- Main Section CSS Starts Here ------- */
+.main {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* ------- Side Section CSS Starts Here ------- */
+.aside {
+  width: 130px;
+  height: 100%;
+  border-radius: 5px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--off-white);
+}
+
+.aside a {
+  font-size: 16px;
+  color: var(--black);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ------- Products Section CSS Starts Here ------- */
+.hero {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  border-radius: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: var(--off-white);
+}
+
+.product-card {
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 20px;
+			width: 300px;
+		}
+
+		.product-card img {
+			max-width: 100%;
+		}
+
+		.product-card h2 {
+			font-size: 1.2rem;
+			margin-top: 0;
+		}
+
+		.product-card p {
+			margin: 10px 0;
+		}
+
+		.product-card button {
+			background-color: #008CBA;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 1rem;
+			padding: 10px 20px;
+			transition: background-color 0.3s ease;
+		}
+
+		.product-card button:hover {
+			background-color: #005F6B;
+		}
